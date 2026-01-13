@@ -94,7 +94,7 @@ class CRMSystem:
 crm = CRMSystem()
 
 while True:
-    print("\n--- CRM MENU ---")
+  
     print("1. Add Customer")
     print("2. Display All Customers")
     print("3. Search Customer")
