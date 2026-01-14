@@ -21,13 +21,11 @@ class CRMSystem:
         for i in self.customers:
             print(i)
 
-
     def search_customer(self):
         s=input("Enter email or ID to search:")
         for i in self.customers:
             if str(i["id"])==s or i["email"]==s:
                 print(i)
-
 
     def update_customer(self):
         p=int(input("Enter id to update"))
@@ -36,15 +34,12 @@ class CRMSystem:
                 if i["status"] == "Lead":
                     i["status"] = "Customer"
                     print(i)
-
                 elif i["status"] == "Customer":
                     i["status"] = "Client"
                     print(i)
                 else:
                     print("cannot be Downgrade")
                     print(i)
-
-
 
     def delete_customer(self):
         k = int(input("Enter the id want to delete: "))
@@ -58,7 +53,6 @@ class CRMSystem:
                     print("Cannot possible to delete this customer")
                 return
             
-
     def count_status(self):
 
         Lead = 0
@@ -75,21 +69,11 @@ class CRMSystem:
             elif i["status"] == "Client":
                 Client += 1
 
-
         print("\n Count of the Status")
 
         print("Lead",Lead)
         print("Customer",Customer)
         print("Cleint",Client)
-
-
-        
-                
-         
-                
-
-
-    
             
 crm = CRMSystem()
 
